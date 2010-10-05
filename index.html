@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form Savior Example</title>
+	<meta name="description" content="jQuery plugin to prompt save of unsaved changes in form">
+	<meta name="author" content="Anand Gorantala">
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.formSavior.js"></script>
+	<script type="text/javascript">  
+		$(document).ready(function() {
+			$("#personInfo").formSavior();
+		});
+	</script>
+	<style type="text/css">
+		ol { padding:0; }
+		li { list-style:none;padding:0.5em 0; }
+		label{ display:block; float:left; width:100px; }
+		footer { clear:both;float:right; }
+	</style>
+</head>
+
+<body>
+	<form name="personInfo" id="personInfo" method="post">
+		<fieldset>
+			<legend>Personnel Information</legend>
+			<ol>
+				<li>
+					<label for="name">Name</label>
+					<input name="name" id="name" type="text" />
+				</li>
+				<li>
+					<label for="address">Address</label>
+					<textarea name="address" id="address"></textarea>
+				</li>
+				<li>
+					<input type="submit" value="Save" />
+				</li>
+			</ol>
+			
+			
+			
+		</fieldset>
+	</form>
+	<span class="hint"><b>Hint: </b> Enter any input and try to refresh or navigate away from the page</span>
+	<footer>
+		<a href="http://arrowconcept.com">Arrowconcept.com</a>
+	</footer>
+</body>
+
+</html>
