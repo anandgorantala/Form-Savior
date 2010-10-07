@@ -7,14 +7,17 @@
 	<meta name="author" content="Anand Gorantala">
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.formSavior.js"></script>
+	<script type="text/javascript" src="jquery.formSavior.min.js"></script>
 	<script type="text/javascript">  
 		$(document).ready(function() {
-			$("#personInfo").formSavior();
+			$("#personInfo").formSavior({
+				'msg' : 'Personnel information changes have not been saved.'
+			});
 		});
 	</script>
 	<style type="text/css">
-		ol { padding:0; }
+		* { font-family:Arial, Helvetica, sans-serif; }
+		ol { padding:0; font-size:0.8em; }
 		li { list-style:none;padding:0.5em 0; }
 		label{ display:block; float:left; width:100px; }
 		footer { clear:both;float:right; }
@@ -28,7 +31,7 @@
 			<ol>
 				<li>
 					<label for="name">Name</label>
-					<input name="name" id="name" type="text" />
+					<input name="name" id="name" type="text" value="Anand" />
 				</li>
 				<li>
 					<label for="address">Address</label>
