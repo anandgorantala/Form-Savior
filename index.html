@@ -6,12 +6,12 @@
 	<meta name="description" content="jQuery plugin to prompt save of unsaved changes in form">
 	<meta name="author" content="Anand Gorantala">
 	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<script type="text/javascript" src="jquery.formSavior.min.js"></script>
 	<script type="text/javascript">  
 		$(document).ready(function() {
 			$("#personInfo").formSavior({
-				'msg' : 'Personnel information changes have not been saved.'
+				'msg' : 'User information changes have not been saved.'
 			});
 		});
 	</script>
@@ -27,7 +27,7 @@
 <body>
 	<form name="personInfo" id="personInfo" method="post">
 		<fieldset>
-			<legend>Personnel Information</legend>
+			<legend>User Information</legend>
 			<ol>
 				<li>
 					<label for="name">Name</label>
@@ -46,7 +46,8 @@
 			
 		</fieldset>
 	</form>
-	<span class="hint"><b>Hint: </b> Enter any input and try to refresh or navigate away from the page</span>
+	<br><br>
+	<span class="hint"><b>Hint: </b> Enter any input and try to refresh or hit the back button or navigate away from the page using the address bar</span>
 	<footer>
 		<a href="http://arrowconcept.com">Arrowconcept.com</a>
 	</footer>
