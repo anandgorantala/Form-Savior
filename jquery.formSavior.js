@@ -3,7 +3,8 @@
 	return this.each(function() {
 
 		var cfg = {
-			'msg'   : 'There are unsaved changes on this form'
+			'msg'   : 'There are unsaved changes on this form',
+			'noprompt' : 'noprompt
       	};
 		
 		if ( options ) { 
@@ -27,7 +28,7 @@
 		
 		function savePrompt() {
 			current = $form.serialize();
-			if(current != originals && showalert === true) {
+			if(current != originals && showalert === true && !$form.hasClass(cfg.noprompt)) {
 				return cfg.msg;
 			}
 		}
