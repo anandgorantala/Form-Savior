@@ -4,7 +4,7 @@
 
 		var cfg = {
 			'msg'   : 'There are unsaved changes on this form',
-			'noprompt' : 'noprompt
+			'noprompt' : 'noprompt'
       	};
 		
 		if ( options ) { 
