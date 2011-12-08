@@ -7,12 +7,14 @@
 	<meta name="author" content="Anand Gorantala">
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.formSavior.min.js"></script>
+	<script type="text/javascript" src="jquery.formSavior.js"></script>
 	<script type="text/javascript">  
 		$(document).ready(function() {
 			$("#personInfo").formSavior({
 				'msg' : 'User information changes have not been saved.'
 			});
+			
+			
 		});
 	</script>
 	<style type="text/css">
@@ -38,10 +40,13 @@
 					<textarea name="address" id="address"></textarea>
 				</li>
 				<li>
-					<input type="submit" value="Save" />
+					<label for="avatar">Avatar</label>
+					<input name="avatar" id="avatar" type="file" />
+				</li>
+				<li>
+					<input type="submit" value="Save" /> or <a href="http://ianand2.github.com/Form-Savior/" class="fs_noprompt">Leave without saving</a>
 				</li>
 			</ol>
-			
 			
 			
 		</fieldset>
