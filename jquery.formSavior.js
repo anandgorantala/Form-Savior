@@ -18,7 +18,7 @@
                 $doc = $(document);
 
             // Adding a click listener for noprompt links, onclick adds a noprompt class to the form
-            $('.' + cfg.noprompt).live('click', function () {
+            $doc.on('click', '.' + cfg.noprompt, function () {
                 $(this).closest("form").addClass(cfg.noprompt);
             });
 
