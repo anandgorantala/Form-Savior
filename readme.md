@@ -21,7 +21,7 @@ REQUIREMENTS
 ------------
 
 
-You will of course need jQuery(http://jquery.com) to run this. This is a jQuery plugin after all   
+jQuery 1.7+   
 
 
 USAGE
